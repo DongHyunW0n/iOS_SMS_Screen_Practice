@@ -98,9 +98,12 @@ extension ViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = messageTableView.dequeueReusableCell(withIdentifier: "SMSTableViewCell", for: indexPath) as! SMSTableViewCell
+        let onClickColor = UIView()
+        onClickColor.backgroundColor = .clear
         cell.numberLabel.text = numberAry[indexPath.row]
         cell.dateLabel.text = dateAry[indexPath.row]
         cell.contentLabel.text = contentAry[indexPath.row]
+        cell.selectedBackgroundView = onClickColor
         
         return cell
     }

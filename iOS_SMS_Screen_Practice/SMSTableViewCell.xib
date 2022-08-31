@@ -11,7 +11,7 @@
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="98" id="zZ7-VW-yIr" customClass="SMSTableViewCell" customModule="iOS_SMS_Screen_Practice" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zZ7-VW-yIr" id="RkN-RD-4qJ">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zZ7-VW-yIr" id="RkN-RD-4qJ">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -48,6 +48,7 @@
                     <constraint firstItem="l53-8m-HzX" firstAttribute="top" secondItem="fUs-dG-Jz4" secondAttribute="top" id="4eQ-Zq-rr6"/>
                     <constraint firstItem="l53-8m-HzX" firstAttribute="leading" secondItem="fUs-dG-Jz4" secondAttribute="trailing" constant="20" id="5WT-MP-82f"/>
                     <constraint firstAttribute="trailing" secondItem="ovR-Cs-LHI" secondAttribute="trailing" constant="15" id="EkY-cr-6wB"/>
+                    <constraint firstAttribute="bottom" secondItem="fUs-dG-Jz4" secondAttribute="bottom" constant="20" id="Qok-Yn-99W"/>
                     <constraint firstItem="ovR-Cs-LHI" firstAttribute="leading" secondItem="fUs-dG-Jz4" secondAttribute="trailing" constant="20" id="R4J-1f-S7T"/>
                     <constraint firstItem="fUs-dG-Jz4" firstAttribute="leading" secondItem="RkN-RD-4qJ" secondAttribute="leading" constant="15" id="Rkc-db-iqI"/>
                     <constraint firstAttribute="trailing" secondItem="Wvw-nQ-sgN" secondAttribute="trailing" constant="20" id="dPo-qf-McE"/>
@@ -63,7 +64,7 @@
                 <outlet property="dateLabel" destination="Wvw-nQ-sgN" id="G58-UZ-VU2"/>
                 <outlet property="numberLabel" destination="l53-8m-HzX" id="8b7-EV-m8a"/>
             </connections>
-            <point key="canvasLocation" x="128.98550724637681" y="111.83035714285714"/>
+            <point key="canvasLocation" x="-222" y="-20"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_SMS_Screen_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_SMS_Screen_Practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,6 +57,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" id="Y2a-L1-osS">
                             <connections>
                                 <action selector="writeButton:" destination="BYZ-38-t0r" id="A4G-QI-4OU"/>
+                                <segue destination="5ih-ml-iUv" kind="presentation" id="qsU-Qd-7Go"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -68,6 +69,72 @@
             </objects>
             <point key="canvasLocation" x="424.63768115942031" y="103.79464285714285"/>
         </scene>
+        <!--새로운 메시지-->
+        <scene sceneID="MeE-G5-KNs">
+            <objects>
+                <viewController storyboardIdentifier="newMessageViewController" title="새로운 메시지" id="5ih-ml-iUv" customClass="newMessageViewController" customModule="iOS_SMS_Screen_Practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wun-iK-Y8S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zkt-zw-FCv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYW-Z5-HvD">
+                                        <rect key="frame" x="345" y="15" width="49" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="취소"/>
+                                        <connections>
+                                            <action selector="cancelButton:" destination="5ih-ml-iUv" eventType="touchUpInside" id="yrX-Nn-KEj"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="새로운 메시지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33z-Qb-uY9">
+                                        <rect key="frame" x="160.5" y="20" width="93" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstItem="XYW-Z5-HvD" firstAttribute="top" secondItem="Zkt-zw-FCv" secondAttribute="top" constant="15" id="LGc-At-fj7"/>
+                                    <constraint firstItem="33z-Qb-uY9" firstAttribute="centerX" secondItem="Zkt-zw-FCv" secondAttribute="centerX" id="dAX-B4-4LJ"/>
+                                    <constraint firstAttribute="height" constant="70" id="gLl-MN-KGi"/>
+                                    <constraint firstAttribute="trailing" secondItem="XYW-Z5-HvD" secondAttribute="trailing" constant="20" id="hEm-us-PAl"/>
+                                    <constraint firstItem="33z-Qb-uY9" firstAttribute="top" secondItem="Zkt-zw-FCv" secondAttribute="top" constant="20" id="vW0-Tv-TGT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZUd-xL-G9W"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZUd-xL-G9W" firstAttribute="trailing" secondItem="Zkt-zw-FCv" secondAttribute="trailing" id="E22-gW-vzm"/>
+                            <constraint firstItem="Zkt-zw-FCv" firstAttribute="leading" secondItem="ZUd-xL-G9W" secondAttribute="leading" id="H9J-Wm-sGP"/>
+                            <constraint firstItem="Zkt-zw-FCv" firstAttribute="top" secondItem="ZUd-xL-G9W" secondAttribute="top" id="KuQ-De-t4q"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhY-Nd-TAh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1453.6231884057972" y="-196.20535714285714"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EQi-J1-ltH">
+            <objects>
+                <viewController id="pXr-R2-w66" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QG9-RE-3gX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bhG-2c-9MC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Dh-Xq-qDE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1454" y="563"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="FX6-vu-H6h">
             <objects>
@@ -76,6 +143,9 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="30T-lZ-bVy">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1gd-fA-yLE"/>
                     </connections>
@@ -89,6 +159,9 @@
         <image name="square.and.pencil" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
